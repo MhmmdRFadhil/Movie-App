@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ryz.movie">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Movie">
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.movie.favorite.FavoriteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.movie.all.AllMovieActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.movie.detail.DetailMovieActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.movie.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

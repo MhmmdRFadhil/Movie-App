@@ -3,13 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/drawable-v24/ic_arrow.xml" value="0.1045" />
         <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/drawable/background_overlay.xml" value="0.1235" />
         <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.1235" />
+        <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/drawable/ic_baseline_refresh_24.xml" value="0.1755" />
         <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/drawable/rectangle.xml" value="0.1235" />
+        <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/layout/activity_all_movie.xml" value="0.17421875" />
+        <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/layout/activity_detail_movie.xml" value="0.173828125" />
+        <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/layout/activity_favorite.xml" value="0.17421875" />
         <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/layout/detail_movie.xml" value="0.264" />
-        <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/layout/item_row_coming_soon.xml" value="0.4" />
-        <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/layout/item_row_now_playing.xml" value="0.23229166666666667" />
+        <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/layout/custom_progress_bar.xml" value="0.23229166666666667" />
+        <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/layout/detail_movie.xml" value="0.4" />
+        <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/layout/empty_data.xml" value="0.176" />
+        <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/layout/item_row_all_movie.xml" value="0.25" />
+        <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/layout/item_row_all_now_playing.xml" value="0.17421875" />
+        <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/layout/item_row_coming_soon.xml" value="0.264" />
+        <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/layout/item_row_now_playing.xml" value="0.152" />
+        <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/layout/item_row_up_coming.xml" value="0.17421875" />
+        <entry key="..\:/Aplikasi/AndroidStudio/Project/Bootcamp/Movie/app/src/main/res/layout/toolbar.xml" value="0.17421875" />
       </map>
     </option>
   </component>

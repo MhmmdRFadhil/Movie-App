@@ -15,4 +15,15 @@
 
         <item name="android:windowBackground">@color/colorPrimary</item>
     </style>
+
+    <style name="BackgroundProgress">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="CustomToolbar">
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="navigationIcon">@drawable/ic_arrow</item>
+    </style>
 </resources>

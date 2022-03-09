@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Movie</string>
     <string name="welcome">Welcome 👋</string>
-    <string name="description">Let\'s relax and watch a movie !</string>
+    <string name="description">Let\'s relax and watch a movie!</string>
     <string name="image_favorite">Image Favorite</string>
     <string name="coming_soon">Coming Soon</string>
     <string name="now_playing">Now Playing</string>
@@ -13,4 +13,18 @@
     <string name="synopsis">Synopsis</string>
     <string name="lorem_ipsum_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula sem sit amet placerat auctor. Ut in nunc accumsan, fringilla metus ut, ornare magna. Aliquam facilisis mi sit amet posuere pharetra. Duis purus tellus, dictum non tincidunt varius, lobortis sed est. Nulla posuere vel leo vel elementum. Nulla ex lacus, ornare nec cursus vitae, tempor et ex. Sed volutpat felis elit, in lacinia eros hendrerit nec</string>
     <string name="fab">fab</string>
+    <string name="score">%1$s / 10</string>
+    <string name="see_all">See all</string>
+    <string name="error_message">Terjadi Kesalahan</string>
+    <string name="unknown">Unknown</string>
+    <string name="no_info">No Info</string>
+    <string name="success_added_message">Movie successfully added to favorite list</string>
+    <string name="success_removed_message">Movie successfully removed from favorite list</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="all_movie">All Movie</string>
+    <string name="favorite">Favorite</string>
+    <string name="empty_data">Empty Data</string>
+    <string name="title_empty_data">Lorem ipsum dolor sit amet</string>
+    <string name="title_result_empty_data_movie">My favorite Movie list is empty</string>
+    <string name="subtitle_result_empty_data_movie">Please add the Movie of your choice so that it appears on this page</string>
 </resources>

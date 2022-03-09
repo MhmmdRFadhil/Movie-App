@@ -1,4 +1,4 @@
-package com.ryz.movie.local.entity
+package com.ryz.movie.core.data.source.local.entity
 
 import android.os.Parcelable
 import androidx.annotation.NonNull
@@ -13,7 +13,7 @@ data class MovieEntity(
     @PrimaryKey
     @NonNull
     @ColumnInfo(name = "id")
-    var id: String,
+    var id: Int,
 
     @ColumnInfo(name = "title")
     var title: String,
