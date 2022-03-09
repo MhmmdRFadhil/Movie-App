@@ -52,5 +52,5 @@ class UpcomingMovieAdapter: RecyclerView.Adapter<UpcomingMovieAdapter.ViewHolder
         holder.bind(movie)
     }
 
-    override fun getItemCount(): Int = 7
+    override fun getItemCount(): Int = 5
 }

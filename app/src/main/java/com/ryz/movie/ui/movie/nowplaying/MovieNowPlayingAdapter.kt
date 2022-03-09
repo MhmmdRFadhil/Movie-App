@@ -26,7 +26,6 @@ class MovieNowPlayingAdapter: RecyclerView.Adapter<MovieNowPlayingAdapter.ViewHo
         RecyclerView.ViewHolder(binding.root) {
         fun bind(movieEntity: MovieEntity) {
             with(binding) {
-                tvTitleDetail.text = movieEntity.title
                 movieEntity.poster.let {
                     imgPosterItem.loadImageUrl(it)
                 }
@@ -51,7 +50,7 @@ class MovieNowPlayingAdapter: RecyclerView.Adapter<MovieNowPlayingAdapter.ViewHo
         holder.bind(movie)
     }
 
-    override fun getItemCount(): Int = 5
+    override fun getItemCount(): Int = 7
 }
 
 interface MovieClickedCallback {
