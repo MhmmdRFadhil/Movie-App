@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Movie">
         <activity
+            android:name=".ui.movie.MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.movie.favorite.FavoriteActivity"
             android:exported="false" />
         <activity
@@ -21,7 +24,7 @@
             android:name=".ui.movie.detail.DetailMovieActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.movie.MainActivity"
+            android:name=".ui.splashscreen.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
