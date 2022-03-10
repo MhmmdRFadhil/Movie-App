@@ -9,33 +9,41 @@
         android:id="@+id/tvTitleEmptyData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_semi_bold"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_bold"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/tvSubTitleEmptyData"
-        app:layout_constraintEnd_toEndOf="@+id/tvSubTitleEmptyData"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/tvSubTitleEmptyData"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        tools:text="@string/title_empty_data" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/title_result_empty_data_movie" />
 
     <TextView
         android:id="@+id/tvSubTitleEmptyData"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
         android:fontFamily="@font/poppins_regular"
         android:gravity="center"
         android:textColor="@android:color/white"
         android:textSize="16sp"
+        app:layout_constraintVertical_bias="0.45"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitleEmptyData"
-        tools:text="@string/lorem_ipsum_description" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/subtitle_result_empty_data_movie" />
+
+    <Button
+        android:id="@+id/btn_favorite"
+        style="@style/CustomButtonEnable"
+        android:layout_width="170dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/add_favorites"
+        app:layout_constraintEnd_toEndOf="@+id/tvSubTitleEmptyData"
+        app:layout_constraintStart_toStartOf="@+id/tvSubTitleEmptyData"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubTitleEmptyData" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

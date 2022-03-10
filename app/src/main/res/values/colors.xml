@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#21222D</color>
-    <color name="colorPrimaryVariant">#000002</color>
-    <color name="colorSecondary">#FFB43A</color>
-    <color name="colorSecondaryVariant">#c78400</color>
+    <color name="colorPrimary">#21242c</color>
+    <color name="colorPrimaryVariant">#000000</color>
+    <color name="colorSecondary">#877bfc</color>
+    <color name="colorSecondaryVariant">#514fc8</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="buttonRippleColor">#33AAAAAA</color>
 </resources>

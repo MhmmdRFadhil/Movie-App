@@ -37,11 +37,11 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_favorite"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:layout_marginEnd="24dp"
-            app:cardBackgroundColor="#727378"
-            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="#757575"
+            app:cardCornerRadius="6dp"
             app:cardElevation="4dp"
             app:cardPreventCornerOverlap="false"
             app:layout_constraintBottom_toBottomOf="@+id/tv_description"
@@ -49,76 +49,64 @@
             app:layout_constraintTop_toTopOf="@+id/tv_welcome">
 
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:contentDescription="@string/image_favorite"
                 android:src="@drawable/ic_favorite" />
 
         </androidx.cardview.widget.CardView>
 
-        <TextView
-            android:id="@+id/tv_coming_soon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:fontFamily="@font/poppins_semi_bold"
-            android:text="@string/upcoming"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/tv_description"
-            app:layout_constraintTop_toBottomOf="@+id/tv_description" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_coming_soon"
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerUpcoming"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="200dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_coming_soon"
-            tools:itemCount="1"
-            tools:listitem="@layout/item_row_up_coming" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_description" />
 
         <TextView
             android:id="@+id/tv_now_playing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/poppins_semi_bold"
             android:text="@string/now_playing"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="18sp"
             app:layout_constraintStart_toStartOf="@+id/tv_description"
-            app:layout_constraintTop_toBottomOf="@+id/rv_coming_soon" />
+            app:layout_constraintTop_toBottomOf="@+id/viewPagerUpcoming" />
 
         <TextView
             android:id="@+id/tv_see_all"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_semi_bold"
-            android:text="@string/see_all"
-            android:textColor="#78909C"
+            android:text="@string/view_all"
+            android:textColor="#757575"
             android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="@+id/tv_now_playing"
             app:layout_constraintEnd_toEndOf="@+id/cv_favorite"
             app:layout_constraintTop_toTopOf="@+id/tv_now_playing" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_now_playing"
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerNowPlaying"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
             android:layout_marginBottom="32dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_now_playing"
-            tools:listitem="@layout/item_row_now_playing" />
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_now_playing" />
 
         <include
             android:id="@+id/progress_bar"

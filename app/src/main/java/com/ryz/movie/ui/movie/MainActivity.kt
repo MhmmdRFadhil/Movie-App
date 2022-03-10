@@ -6,12 +6,13 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.LinearSnapHelper
+import androidx.lifecycle.lifecycleScope
+import androidx.viewpager2.widget.ViewPager2
 import com.ryz.movie.R
 import com.ryz.movie.core.data.source.local.entity.MovieEntity
 import com.ryz.movie.core.data.source.local.entity.UpComingMovieEntity
-import com.ryz.movie.core.utils.ZoomCenterLinearLayoutManager
+import com.ryz.movie.core.utils.autoScroll
+import com.ryz.movie.core.utils.setCarouselEffects
 import com.ryz.movie.core.vo.Status
 import com.ryz.movie.databinding.ActivityMainBinding
 import com.ryz.movie.ui.movie.all.AllMovieActivity
@@ -77,15 +78,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showRecyclerViewUpComingMovie(data: List<UpComingMovieEntity>?) {
-        binding.rvComingSoon.apply {
-
+        binding.viewPagerUpcoming.apply {
+            orientation = ViewPager2.ORIENTATION_HORIZONTAL
             upcomingMovieAdapter = UpcomingMovieAdapter()
-            setHasFixedSize(true)
             upcomingMovieAdapter.setUpcomingMovie(data)
-            layoutManager =
-                LinearLayoutManager(this@MainActivity, LinearLayoutManager.HORIZONTAL, false)
-
             adapter = upcomingMovieAdapter
+            autoScroll(lifecycleScope, INTERVAL_TIME)
         }
     }
 
@@ -119,21 +117,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showRecyclerViewMovie(data: List<MovieEntity>?) {
-        binding.rvNowPlaying.apply {
-
+        binding.viewPagerNowPlaying.apply {
             movieNowPlayingAdapter = MovieNowPlayingAdapter()
-            setHasFixedSize(true)
             movieNowPlayingAdapter.setMovie(data)
-            layoutManager =
-                ZoomCenterLinearLayoutManager(
-                    this@MainActivity,
-                    LinearLayoutManager.HORIZONTAL,
-                    false
-                )
             adapter = movieNowPlayingAdapter
-            val snapHelper = LinearSnapHelper()
-            onFlingListener = null
-            snapHelper.attachToRecyclerView(this)
+
+            setCarouselEffects()
 
             movieNowPlayingAdapter.setOnItemClickedCallback(object : MovieClickedCallback {
                 override fun onItemClick(movieEntity: MovieEntity) {
@@ -146,7 +135,11 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
             })
-
         }
+    }
+
+
+    companion object {
+        const val INTERVAL_TIME = 5000L
     }
 }

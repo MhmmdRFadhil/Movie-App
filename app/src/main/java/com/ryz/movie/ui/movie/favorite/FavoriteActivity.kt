@@ -11,6 +11,7 @@ import com.ryz.movie.R
 import com.ryz.movie.core.data.source.local.entity.MovieEntity
 import com.ryz.movie.core.utils.simpleToolbar
 import com.ryz.movie.databinding.ActivityFavoriteBinding
+import com.ryz.movie.ui.movie.all.AllMovieActivity
 import com.ryz.movie.ui.viewmodel.ViewModelFactory
 import com.ryz.movie.ui.movie.detail.DetailMovieActivity
 import com.ryz.movie.ui.movie.detail.DetailViewModel
@@ -44,7 +45,10 @@ class FavoriteActivity : AppCompatActivity() {
             override fun onItemClick(movieEntity: MovieEntity) {
                 val intent = Intent(this@FavoriteActivity, DetailMovieActivity::class.java)
                 intent.putExtra(DetailMovieActivity.EXTRA_ID, movieEntity.id)
-                intent.putExtra(DetailMovieActivity.EXTRA_CATEGORY, DetailViewModel.TYPE_NOW_PLAYING)
+                intent.putExtra(
+                    DetailMovieActivity.EXTRA_CATEGORY,
+                    DetailViewModel.TYPE_NOW_PLAYING
+                )
                 startActivity(intent)
             }
         })
@@ -57,6 +61,10 @@ class FavoriteActivity : AppCompatActivity() {
                 it.tvTitleEmptyData.text = getString(R.string.title_result_empty_data_movie)
                 it.tvSubTitleEmptyData.text = getString(R.string.subtitle_result_empty_data_movie)
                 it.root.visibility = View.VISIBLE
+                it.btnFavorite.setOnClickListener {
+                    startActivity(Intent(this@FavoriteActivity, AllMovieActivity::class.java))
+                    finish()
+                }
             }
         }
     }
@@ -71,7 +79,7 @@ class FavoriteActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when(item.itemId) {
+        return when (item.itemId) {
             android.R.id.home -> {
                 onBackPressed()
                 true

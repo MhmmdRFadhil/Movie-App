@@ -67,9 +67,7 @@ class DetailMovieActivity : AppCompatActivity(), View.OnClickListener {
                     }
                 }
             }
-
         }
-
     }
 
     private fun populateDetailMovie(data: MovieEntity) {
@@ -86,7 +84,7 @@ class DetailMovieActivity : AppCompatActivity(), View.OnClickListener {
             tvRating.text = getString(R.string.score, data.score.toString())
             tvSynopsis.text = convertOverview(data.overview)
 
-            simpleToolbar(data.title, binding.toolbar.root, true)
+            simpleToolbar(getString(R.string.detail_movie), binding.toolbar.root, true)
         }
     }
 

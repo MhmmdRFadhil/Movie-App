@@ -14,7 +14,6 @@
     <string name="lorem_ipsum_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vehicula sem sit amet placerat auctor. Ut in nunc accumsan, fringilla metus ut, ornare magna. Aliquam facilisis mi sit amet posuere pharetra. Duis purus tellus, dictum non tincidunt varius, lobortis sed est. Nulla posuere vel leo vel elementum. Nulla ex lacus, ornare nec cursus vitae, tempor et ex. Sed volutpat felis elit, in lacinia eros hendrerit nec</string>
     <string name="fab">fab</string>
     <string name="score">%1$s / 10</string>
-    <string name="see_all">See all</string>
     <string name="error_message">Terjadi Kesalahan</string>
     <string name="unknown">Unknown</string>
     <string name="no_info">No Info</string>
@@ -25,6 +24,9 @@
     <string name="favorite">Favorite</string>
     <string name="empty_data">Empty Data</string>
     <string name="title_empty_data">Lorem ipsum dolor sit amet</string>
-    <string name="title_result_empty_data_movie">My favorite Movie list is empty</string>
-    <string name="subtitle_result_empty_data_movie">Please add the Movie of your choice so that it appears on this page</string>
+    <string name="title_result_empty_data_movie">No favorite yet!</string>
+    <string name="subtitle_result_empty_data_movie">Would you like to add some of your favorite movie now?</string>
+    <string name="view_all">View all</string>
+    <string name="detail_movie">Detail movie</string>
+    <string name="add_favorites">Add Favorites</string>
 </resources>
