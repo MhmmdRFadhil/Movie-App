@@ -1,6 +1,6 @@
 # Bootcamp SIDINGBAR 1.0 "Mobile Development"
 
-This repository is the Bootcamp SIDINGBAR 1.0 Mobile Development. This application is purpose to display information on the list of movies that are currently showing .<br>
+This repository is the Bootcamp SIDINGBAR 1.0 Mobile Development. This application is purpose to display information on the list of movies that are currently showing.<br>
  
  ## Feature
 Several features in this application:
