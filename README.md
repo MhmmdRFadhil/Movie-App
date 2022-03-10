@@ -15,7 +15,7 @@ Some libraries I used to:
 - Room
 - Lottie
 - LiveData
-- etc
+- Etc
 
 ## License 
 MIT License
