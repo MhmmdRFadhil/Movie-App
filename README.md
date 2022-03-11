@@ -17,6 +17,10 @@ Some libraries I used to:
 - LiveData
 - Etc
 
+## Resources
+- [The Movie Database](https://www.themoviedb.org)
+- [FlatIcon](https://www.flaticon.com/)
+
 ## License 
 MIT License
 
