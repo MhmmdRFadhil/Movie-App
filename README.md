@@ -18,8 +18,8 @@ Some libraries I used to:
 - Etc
 
 ## Resources
-- [The Movie Database](https://www.themoviedb.org)
-- [FlatIcon](https://www.flaticon.com/)
+- API : [The Movie Database](https://www.themoviedb.org)
+- Icon : [FlatIcon](https://www.flaticon.com/)
 
 ## License 
 MIT License
